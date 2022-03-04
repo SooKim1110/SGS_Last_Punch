@@ -1,12 +1,14 @@
 # <img height="25px" width="25px" src="https://user-images.githubusercontent.com/44664867/153584703-0fc34cd1-0091-46de-94ad-290415fb5fc1.png"> Snack
 
+![노트채팅](https://user-images.githubusercontent.com/44664867/154942769-4b5eab23-bf79-4e64-bbfe-b868abcd7309.gif)
+
 *여러 협업 툴을 사용하면서 새 창을 키거나 알트탭은 그만!*
 
 *Slack과 Notion의 기능을 합친 Snack으로 쾌적한 협업을 경험해보세요!*
 
 *워크스페이스와 채널을 생성하고 팀원을 초대하여 **채팅**하고 노트를 만들어 **공동 편집**을 할 수 있습니다!*
 
-*Let's Snack! (url)*
+*Let's Snack!*
 
 <br>
 
@@ -27,6 +29,26 @@
 *편집은 선점권을 지닌 단 한 명만 할 수 있습니다!*
 
 팀원들이 같은 문서를 편집할 때 좀 더 안전하고 편집 내용에 집중할 수 있는 경험을 제공합니다.
+
+<br>
+
+<br>
+
+## 역할 분담
+
+### Frontend
+[🐮 김건형](https://github.com/GeonHyeongKim):  [iOS App](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/frontend/ios)
+
+[🐶 차효준](https://github.com/chahtk): [Web App](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/frontend/web), 노트 기획
+
+### Backend
+[🦉 김지수](https://github.com/SooKim1110): [인증 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/authServer), [노트 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/note-server), [게이트웨이](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/gateway), [Eureka 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/eureka-server)
+
+코드리뷰가이드는 다음 링크를 참고해주세요.
+https://github.com/SooKim1110/SGS_Last_Punch/blob/dev/src/backend/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0%EA%B0%80%EC%9D%B4%EB%93%9C_%EA%B9%80%EC%A7%80%EC%88%98.md
+
+
+[🐻 김지효](https://github.com/njsh4261): [워크스페이스 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/workspace), [채팅 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/chat), [프리젠스 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/presence)
 
 <br>
 
@@ -119,20 +141,6 @@
 - 알림: FCM을 이용한 알림
 
 채팅은 웹소켓으로 직접 메세지를 전달하기 때문에 안정적으로 메세지를 전달할 수 있는 RabbitMQ를 사용했고, 노트 편집 서버에서는 웹소켓으로 업데이트 여부 등 간단한 정보만을 전달하기 때문에 빠르고, 간편한 Redis를 사용했습니다.
-
-<br>
-
-## 역할 분담
-
-### Frontend
-[🐮 김건형](https://github.com/GeonHyeongKim):  [iOS App](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/frontend/ios)
-
-[🐶 차효준](https://github.com/chahtk): [Web App](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/frontend/web), 노트 기획
-
-### Backend
-[🦉 김지수](https://github.com/SooKim1110): [인증 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/authServer), [노트 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/note-server), [게이트웨이](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/gateway), [Eureka 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/eureka-server)
-
-[🐻 김지효](https://github.com/njsh4261): [워크스페이스 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/workspace), [채팅 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/chat), [프리젠스 서버](https://github.com/njsh4261/SGS_Last_Punch/tree/dev/src/backend/presence)
 
 <br>
 
